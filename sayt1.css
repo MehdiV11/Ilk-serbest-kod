@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #0f172a;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.typewriter-main {
+  font-size: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+
+  width: 0;
+  animation:
+    typing-1 2s steps(23) forwards,
+    blink 0.7s;
+  margin-bottom: 30px;
+}
+
+.typewriter2 {
+  font-size: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+
+  width: 0;
+  animation:
+    typing-2 4s steps(31) forwards,
+    blink 0.7s;
+  margin-bottom: 30px;
+}
+
+.choices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  text-decoration: none;
+  color: white;
+  background-color: #1e293b;
+  padding: 15px;
+  border-radius: 15px;
+  width: 180px;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.or-text {
+  font-size: 28px;
+  font-weight: bold;
+  opacity: 0;
+  animation: showOr 0.5s forwards;
+  animation-delay: 3.5s;
+}
+
+@keyframes typing-1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 19ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.pablo-card {
+  animation: showCard 0.5s forwards;
+  animation-delay: 2s;
+   background: #853f3f;
+  padding: 20px;
+  margin-bottom: 50px;
+  border-radius: 14px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.4s ease; 
+  position: relative;
+}
+
+
+.pablo-card:hover {
+  background: #600606; 
+  color: #000000; 
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4); 
+  transform: translateY(-5px); 
+}
+
+.marco-card {
+  animation: showCard 0.5s forwards;
+  animation-delay: 4s;
+   background: #320f64;
+  padding: 20px;
+  margin-bottom: 50px;
+  border-radius: 14px;
+  box-shadow: 0 5px 15px rgba(53, 14, 81, 0.1);
+  transition: all 0.4s ease; 
+  position: relative;
+}
+
+
+.marco-card:hover {
+  background: #490a6b6a;
+  color: #5d0f67c1; 
+  box-shadow: 0 8px 25px rgba(58, 7, 59, 0.4); 
+  transform: translateY(-5px); 
+}
+
+@keyframes showCard {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showOr {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes typing-2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 31ch;
+  }
+}
